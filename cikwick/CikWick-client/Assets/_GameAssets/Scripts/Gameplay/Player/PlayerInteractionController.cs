@@ -4,7 +4,7 @@ public class PlayerInteractionController : MonoBehaviour
 {
     private PlayerController playerController;
 
-    private void Start()
+    private void Awake()
     {
         playerController = GetComponent<PlayerController>();
     }
@@ -14,6 +14,14 @@ public class PlayerInteractionController : MonoBehaviour
         if(collider.gameObject.TryGetComponent<ICollectible>(out var collectible))
         {
             collectible.Collect();
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.TryGetComponent<IBoostable>(out var boostable))
+        {
+            boostable.Boost(playerController);
         }
     }
 }
