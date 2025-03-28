@@ -19,4 +19,10 @@ public class Consts
     {
         public const string IS_SPATULA_JUMPING = "IsSpatulaJumping";
     }
+
+    public struct GameScenes
+    {
+        public const string GAME = "GameScene";
+        public const string MAIN_MENU = "MainMenuScene";
+    }
 }
