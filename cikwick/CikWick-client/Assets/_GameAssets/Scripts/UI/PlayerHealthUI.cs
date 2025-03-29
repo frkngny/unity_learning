@@ -26,19 +26,6 @@ public class PlayerHealthUI : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.O))
-        {
-            AnimateDamage();
-        }
-
-        if(Input.GetKeyDown(KeyCode.P))
-        {
-            AnimateDamageForAll();
-        }
-    }
-
     public void AnimateDamage()
     {
         for (int i = 0; i < _playerHealthImages.Length; i++)
@@ -55,10 +42,7 @@ public class PlayerHealthUI : MonoBehaviour
     {
         for (int i = 0; i < _playerHealthImages.Length; i++)
         {
-            if(_playerHealthImages[i].sprite == _playerHealthySprite)
-            {
-                AnimateDamageSprite(_playerHealthImages[i], _playerHealthTransforms[i]);
-            }
+            AnimateDamageSprite(_playerHealthImages[i], _playerHealthTransforms[i]);
         }
     }
 

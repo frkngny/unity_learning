@@ -490,6 +490,7 @@ MonoBehaviour:
   _eggCounterUI: {fileID: 2120401984}
   _winLoseUI: {fileID: 2096608698}
   _maxEggCount: 5
+  _gameEndDelay: 0.5
 --- !u!4 &91024238
 Transform:
   m_ObjectHideFlags: 0
@@ -1716,7 +1717,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.1402104, y: -0.6930664, z: 0.1402104, w: 0.6930664}
+  m_LocalRotation: {x: 0.12068359, y: -0.69673204, z: 0.12068359, w: 0.69673204}
   m_LocalPosition: {x: 22.031347, y: 11.462318, z: -13.654697}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2656,7 +2657,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 448724985}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.1402104, y: -0.6930664, z: 0.1402104, w: 0.6930664}
+  m_LocalRotation: {x: 0.12068359, y: -0.69673204, z: 0.12068359, w: 0.69673204}
   m_LocalPosition: {x: 22.031347, y: 11.462318, z: -13.654697}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2685,7 +2686,7 @@ MonoBehaviour:
       Size: {x: 0.8, y: 0.8}
       Offset: {x: 0, y: 0}
   CenterOnActivate: 1
-  TargetOffset: {x: 0, y: 0.7, z: 0.2}
+  TargetOffset: {x: 0, y: 0.8, z: 0.5}
   Damping: {x: 1, y: 1}
   Lookahead:
     Enabled: 1
@@ -4990,7 +4991,9 @@ PrefabInstance:
     - {fileID: 2061457418309236115, guid: 69ef6ec9a0720ab4181a382ad028a657, type: 3}
     - {fileID: 8407753506485221431, guid: 69ef6ec9a0720ab4181a382ad028a657, type: 3}
     - {fileID: 3883227884014888857, guid: 69ef6ec9a0720ab4181a382ad028a657, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3452431755777756048, guid: 69ef6ec9a0720ab4181a382ad028a657, type: 3}
+    - {fileID: -967373435552589514, guid: 69ef6ec9a0720ab4181a382ad028a657, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3111667787357115346, guid: 69ef6ec9a0720ab4181a382ad028a657, type: 3}
@@ -5985,7 +5988,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Retry
+  m_text: Play Again
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 43c9ee4ff45731a4f8c125a1c4048b97, type: 2}
   m_sharedMaterial: {fileID: 5561710394761267487, guid: 43c9ee4ff45731a4f8c125a1c4048b97, type: 2}
@@ -8501,6 +8504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf6aba6d3af42d24595cd6a211b763a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerHealthUI: {fileID: 1803403047}
   _maxHealth: 3
 --- !u!4 &1642979275
 Transform:
@@ -10921,7 +10925,7 @@ GameObject:
   - component: {fileID: 2147433221}
   - component: {fileID: 2147433216}
   - component: {fileID: 2147433215}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11061,6 +11065,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7d8a658cbeef749ad9689cccec90b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerVisualTransform: {fileID: 7855575377461001127}
 --- !u!1 &158989798279635605
 GameObject:
   m_ObjectHideFlags: 0
