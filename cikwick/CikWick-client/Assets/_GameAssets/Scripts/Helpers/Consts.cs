@@ -25,4 +25,10 @@ public class Consts
         public const string GAME = "GameScene";
         public const string MAIN_MENU = "MainMenuScene";
     }
+
+    public struct LayerMask
+    {
+        public const string GROUND_LAYER = "Ground";
+        public const string FLOOR_LAYER = "Floor";
+    }
 }
