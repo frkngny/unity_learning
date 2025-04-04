@@ -21,13 +21,14 @@ public class LosePopup : MonoBehaviour
 
     private void OnRetryButtonClicked()
     {
-        SceneManager.LoadScene(Consts.GameScenes.GAME);
+        SceneManager.LoadScene(Consts.Scenes.GAME);
         // GameManager.Instance.ChangeGameState(GameState.Resume);
         // GameManager.Instance.RestartGame();
     }
 
     private void OnMainMenuButtonClicked()
     {
+        SceneManager.LoadScene(Consts.Scenes.MENU);
         // GameManager.Instance.ChangeGameState(GameState.Resume);
         // GameManager.Instance.LoadMainMenu();
     }

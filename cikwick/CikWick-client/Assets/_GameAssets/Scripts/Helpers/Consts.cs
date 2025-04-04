@@ -28,10 +28,10 @@ public class Consts
         public const string IS_SPATULA_JUMPING = "IsSpatulaJumping";
     }
 
-    public struct GameScenes
+    public struct Scenes
     {
         public const string GAME = "GameScene";
-        public const string MAIN_MENU = "MainMenuScene";
+        public const string MENU = "MenuScene";
     }
 
     public struct LayerMask
