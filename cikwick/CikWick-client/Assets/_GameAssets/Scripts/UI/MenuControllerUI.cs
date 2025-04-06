@@ -1,3 +1,4 @@
+using MaskTransitions;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -15,14 +16,11 @@ public class MenuControllerUI : MonoBehaviour
 
     private void OnPlayButtonClicked()
     {
-        // Load the game scene
-        SceneManager.LoadScene(Consts.Scenes.GAME);
+        TransitionManager.Instance.LoadLevel(Consts.Scenes.GAME);
     }
 
     private void OnQuitButtonClicked()
     {
-        // Quit the application
         Application.Quit();
     }
-       
 }

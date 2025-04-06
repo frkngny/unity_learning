@@ -1,5 +1,6 @@
 using System;
 using DG.Tweening;
+using MaskTransitions;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -34,7 +35,7 @@ public class SettingsUI : MonoBehaviour
 
     private void OnMainMenuButtonClicked()
     {
-        SceneManager.LoadScene(Consts.Scenes.MENU);
+        TransitionManager.Instance.LoadLevel(Consts.Scenes.MENU);
     }
 
     private void OnSettingsButtonClicked()

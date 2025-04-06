@@ -1,3 +1,4 @@
+using MaskTransitions;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -21,15 +22,11 @@ public class WinPopup : MonoBehaviour
 
     private void OnRetryButtonClicked()
     {
-        SceneManager.LoadScene(Consts.Scenes.GAME);
-        // GameManager.Instance.ChangeGameState(GameState.Resume);
-        // GameManager.Instance.RestartGame();
+        TransitionManager.Instance.LoadLevel(Consts.Scenes.GAME);
     }
 
     private void OnMainMenuButtonClicked()
     {
-        SceneManager.LoadScene(Consts.Scenes.MENU);
-        // GameManager.Instance.ChangeGameState(GameState.Resume);
-        // GameManager.Instance.LoadMainMenu();
+        TransitionManager.Instance.LoadLevel(Consts.Scenes.MENU);
     }
 }
